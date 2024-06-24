@@ -5,24 +5,45 @@ import { TodoCounter } from './component/TodoCounter.js';
 import { TodoItem } from './component/TodoItem.js';
 import { CreateButton } from './component/CreateButton.js';
 
-import './App.css';
+// const styleTitle = {
+//   color: 'blue',
+//   background: "yellow",
+//   fontSize: 18
+// }
+
+const defaultTodos = [
+  {text: "Lo sea", complete: true},
+  {text: "Lo sea1", complete: false},
+  {text: "Lo sea2", complete: false},
+  {text: "Lo sea3", complete: false},
+]
 
 function App() {
   return (
-    <div className="App">
+    <>
+      {/* <h2 style={styleTitle}>ESTILOS CON VARIABLES DECLARADAS</h2>
+      <h2 style={{fontSize:'18px', background: 'blue'}}>ESTILOS CON DOBLE CORCHETE DE OBJETO</h2> */}
 
-      <TodoCounter/>
+      {/* <h1> */}
+        <TodoCounter complete={4} total= {8} />
+      {/* </h1>  */}
+
       <TodoSearch/>
 
       <TodoList>
+        {defaultTodos.map(item => (
+          <TodoItem key={item.text}
+          list={item.text}
+          />
+        ))}
+        {/* <TodoItem/>
         <TodoItem/>
-        <TodoItem/>
-        <TodoItem/>
+        <TodoItem/> */}
       </TodoList>
 
       <CreateButton/>
       
-    </div>
+    </>
   );
 }
 

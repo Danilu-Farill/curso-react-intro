@@ -1,7 +1,9 @@
-function TodoCounter() {
+import '../style/TodoCounter.css';
+
+function TodoCounter(props) { //o complete, total
   return (
     <>
-    <h1>Has completado 3 de 5 TODOS</h1>
+    <h1>Has completado {props.complete} de {props.total} TODOS</h1>
     </>
   )
 };
