@@ -1,3 +1,5 @@
+import '../style/TodoSearch.css';
+
 function TodoSearch() {
     return (
       <>
