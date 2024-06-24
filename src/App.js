@@ -32,8 +32,10 @@ function App() {
 
       <TodoList>
         {defaultTodos.map(item => (
-          <TodoItem key={item.text}
+          <TodoItem 
+          key={item.text}
           list={item.text}
+          completed={item.complete}
           />
         ))}
         {/* <TodoItem/>

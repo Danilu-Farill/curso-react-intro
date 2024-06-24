@@ -1,10 +1,11 @@
+import './../style/TodoItem.css'
 function TodoItem(props) {
     return (
       <>
-      <li>
-        <span>V</span>
-        <p>{props.list}</p>
-        <span>X</span>
+        <li>
+          <span className={`true Icon-check  ${props.completed && "Icon-check--active"}`}>V</span>
+          <p className={`line-complete  ${props.completed && "line-complete-p"}`}>{props.list}</p>
+          <span className='delete Icon-delete'>X</span>
         </li>
       </>
     )

@@ -1,6 +1,9 @@
 h1 {
-    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
     text-align: center;
     margin: 0; 
-    padding: 48px
+    padding: 48px;
+    color: blueviolet;
+    font-weight: 800;
 }

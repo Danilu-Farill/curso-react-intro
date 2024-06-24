@@ -1,0 +1,14 @@
+input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: darkblue;
+    font-size: 24px;
+    border-radius: 8px;
+    opacity: 0.56;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
