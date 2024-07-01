@@ -1,11 +1,15 @@
 import './../style/TodoItem.css'
+import { CompleteTodo } from './CompleteTodo.js';
+import { DeleteTodo } from './DeleteTodo.js';
 function TodoItem(props) {
     return (
       <>
         <li>
-          <span className={`true Icon-check  ${props.completed && "Icon-check--active"}`}>V</span>
+          <CompleteTodo completed={props.completed} onCompleted={props.todoItemCompleted} />
+          {/* <span className={`Icon Icon-check  ${props.completed && "Icon-check--active"}`} onClick={props.todoItemCompleted}>V</span> */}
           <p className={`line-complete  ${props.completed && "line-complete-p"}`}>{props.list}</p>
-          <span className='delete Icon-delete'>X</span>
+          {/* <span className='Icon Icon-delete' onClick={props.todoItemDelete}>X</span> */}
+          <DeleteTodo todoItemDelete={props.todoItemDelete} onDelete={props.todoItemDelete} />
         </li>
       </>
     )
