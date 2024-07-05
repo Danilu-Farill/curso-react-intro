@@ -1,6 +1,7 @@
 import './../style/TodoItem.css'
 import { CompleteTodo } from './CompleteTodo.js';
 import { DeleteTodo } from './DeleteTodo.js';
+
 function TodoItem(props) {
     return (
       <>

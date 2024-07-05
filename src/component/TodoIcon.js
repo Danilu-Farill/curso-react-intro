@@ -12,8 +12,7 @@ function TodoIcon(props) {
         <span className={`Icon Icon-${props.type}`} onClick={props.onClick}>
             {iconTypes[props.type](props.color)}
         </span>
-    )
-    
+    )  
 };
 
 export { TodoIcon };
